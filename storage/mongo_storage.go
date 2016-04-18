@@ -18,7 +18,7 @@ type SocialData struct {
 
 var glb_session mgo.Session
 
-func main() {
+func init() {
 	glb_session, err := mgo.Dial("localhost")
 	if err != nil {
 		panic(err)
